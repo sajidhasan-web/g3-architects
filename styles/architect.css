@@ -70,34 +70,126 @@ a {
     font-weight: 600;
     border: none;
     margin-top: 32px;
+    max-width: 180px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
 
-@media  screen and (max-width:576px) {
-    header{
-        padding: 5px;
-    }
-    ul {
-        gap: 24px;
-        margin-top: 20px;
-    }
-    .navbar{
-        flex-direction: column;
-    }
+/*--------------- main section styles---------------- */
+
+main {
+    max-width: 1420px;
+    margin: 0 auto;
 }
 
-@media  screen and ( min-width:576px) and (max-width:1080px) {
-    header{
+
+/*------------- teams section start-------------------  */
+
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    padding: 0 auto;
+    margin-top: 80px;
+}
+
+.teams-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.teams-content {
+    padding: 50px;
+    max-width: 500px;
+    margin: 0 70px;
+}
+
+.quick-list {
+    color: #727272;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.of-our {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.teams-features {
+    color: #FF900E;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------responsive media queries------------*/
+
+
+/* --------small device-------- */
+
+@media screen and (max-width:576px) {
+    header {
         padding: 5px;
     }
+
     ul {
         gap: 24px;
         margin-top: 20px;
     }
-    .navbar{
+
+    .navbar {
         flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-image {
+      
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    .teams-content{
+        padding: 20px;
+    }
+   
+}
+
+/*--------- medium device-------------- */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 5px;
+    }
+
+    ul {
+        gap: 24px;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+    .teams-image {
+      
+        grid-template-columns: repeat(1, 1fr) ;
     }
 }
